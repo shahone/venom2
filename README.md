@@ -1,2 +1,7 @@
 # venom2
-film
+Интенсив Glo Academy
+
+## используется
+- HTML
+- CSS
+- JS
