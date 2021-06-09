@@ -1,8 +1,18 @@
 body{
-  background: #000;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+}
+
+.wrapper{
+  height: 100vh;
+  background: url(../img/blood.png) right center/contain no-repeat, url(../img/bg.jpg) top/cover no-repeat;
+}
+
+.venom{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .container{
@@ -15,7 +25,7 @@ body{
 .header{
   display: flex;
   align-items: center;
-  padding: 40px 0 80px;
+  padding: 40px 0 55px;
 }
 
 .logo-link{
@@ -47,15 +57,39 @@ body{
 }
 
 .main-title{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .main-desc{
   max-width: 430px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 140%;
   color: #d1d0d1;
+  margin-bottom: 70px;
+}
 
+.buttons{
+  display: flex;
+}
+
+.button{
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background: url(../img/ticket-btn.svg) 12% 50%/8.5% no-repeat;
+  vertical-align: middle;
+  padding: 15px 30px 15px 55px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.button.button-primary{
+  color: #8d0019;
+  background: #fff;
+  background: url(../img/play-btn.svg) 15% 50%/8.5% no-repeat, #fff;
+  /* padding: 10px 10px 10px 40px; */
 }
 
 @media (hover) {
