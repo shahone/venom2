@@ -1,11 +1,18 @@
+:root{
+  --gray: #d1d0d1;
+}
 body{
-  color: #fff;
+  color: var(--gray);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
 .wrapper{
   height: 100vh;
+  background: url(../img/bg.jpg) top/cover no-repeat;
+}
+
+.wrapper--blood{
   background: url(../img/blood.png) right center/contain no-repeat, url(../img/bg.jpg) top/cover no-repeat;
 }
 
@@ -52,7 +59,6 @@ body{
 /*! main */
 .main-date{
   font-size: 24px;
-  color: #d1d0d1;
   margin-bottom: 38px;
 }
 
@@ -65,7 +71,6 @@ body{
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  color: #d1d0d1;
   margin-bottom: 70px;
 }
 
@@ -90,6 +95,93 @@ body{
   background: #fff;
   background: url(../img/play-btn.svg) 15% 50%/8.5% no-repeat, #fff;
   /* padding: 10px 10px 10px 40px; */
+}
+
+/* ! About */
+.about{
+  display: flex;
+}
+
+.col{
+  flex: 1 1 50%;
+}
+
+/* .col.col-1{
+  display: flex;
+  flex-direction: column;
+} */
+.col-2 {
+  display: flex;
+}
+
+.about-title{
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-desc{
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.about-subtitle{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.about-subtitle.about-subtitle--actors{
+  margin-bottom: 15px;
+}
+
+.subtitle-list{
+  padding: 0;
+  list-style: none;
+  margin: 0 0 20px;
+}
+
+.subtitle-list--columns{
+  max-width: fit-content;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  margin-bottom: 33px;
+}
+
+.list-item{
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.trailer{
+  width: 356px;
+  height: 205px;
+  background: url(../img/preview.jpg) center/cover no-repeat;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play{
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background: url(../img/play-btn.svg) center/35% no-repeat, #fff;
+  cursor: pointer;
+}
+
+.poster{
+  padding-right: 30px;
+  border-radius: 5px;
 }
 
 @media (hover) {
