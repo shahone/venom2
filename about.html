@@ -8,6 +8,7 @@
   <title>О фильме — Venom 2</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,6 +27,7 @@
             <li class="nav-menu-item"><a class="nav-menu-link" href="#">актеры</a></li>
             <li class="nav-menu-item"><a class="nav-menu-link" href="#">премьера</a></li>
           </ul>
+          <button class="nav-button">меню</button>
         </nav>
       </header>
       <section class="about">
@@ -48,7 +50,11 @@
             <li class="list-item">Уилльям Барбо</li>
             <li class="list-item">Пегги Лу</li>
           </ul>
-          <div class="trailer"><button class="play">play</button></div>
+          <div class="trailer">
+            <a class="play" data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0">
+              YouTube video
+            </a>
+          </div>
         </div>
         <div class="col col-2">
           <img class="poster" src="img/poster.jpg" alt="poster">
@@ -73,6 +79,9 @@
       </section>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
